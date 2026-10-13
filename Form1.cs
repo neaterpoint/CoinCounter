@@ -36,7 +36,7 @@ namespace CoinCounter
 
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            //TODO: Implement save functionality
+            pictureBox2.Image.Save(saveFileDialog1.FileName);
         }
 
         private async void button1_Click(object sender, EventArgs e)

@@ -17,8 +17,7 @@ namespace CoinCounter
         {
             InitializeComponent();
 
-            string imagePath = System.IO.Path.Combine(Application.StartupPath, "images", "Sample.jpeg");
-            image = new Bitmap(imagePath);
+            image = new Bitmap(Properties.Resources.Sample);
             pictureBox1.Image = image;
         }
 

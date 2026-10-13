@@ -16,6 +16,10 @@ namespace CoinCounter
         public Form1()
         {
             InitializeComponent();
+
+            string imagePath = System.IO.Path.Combine(Application.StartupPath, "images", "Sample.jpeg");
+            image = new Bitmap(imagePath);
+            pictureBox1.Image = image;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
